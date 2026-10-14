@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>법조인 전직 테스트 | 청소년 로스쿨 11기</title>
-<meta name="description" content="10개의 퀘스트에 답하고 나에게 맞는 법조인 직업을 찾아보세요. 헌법재판관·변호사·검사·판사·노무사 중 나는 어떤 직업일까?">
+<meta name="description" content="9개의 퀘스트에 답하고 나에게 맞는 법조인 직업을 찾아보세요. 헌법재판관·변호사·검사·판사·노무사 중 나는 어떤 직업일까?">
 <meta property="og:type" content="website">
 <meta property="og:title" content="법조인 전직 테스트 | 청소년 로스쿨 11기">
-<meta property="og:description" content="나는 어떤 법조인으로 전직하게 될까? 10개의 퀘스트로 알아보는 나의 법조인 직업">
+<meta property="og:description" content="나는 어떤 법조인으로 전직하게 될까? 9개의 퀘스트로 알아보는 나의 법조인 직업">
 <meta property="og:image" content="og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' fill='%237CC9F0'/%3E%3Crect x='7' y='2' width='2' height='9' fill='%23F2B632'/%3E%3Crect x='2' y='3' width='12' height='2' fill='%23F2B632'/%3E%3Crect x='2' y='5' width='2' height='3' fill='%23F2B632'/%3E%3Crect x='12' y='5' width='2' height='3' fill='%23F2B632'/%3E%3Crect x='1' y='8' width='4' height='1' fill='%23F2B632'/%3E%3Crect x='11' y='8' width='4' height='1' fill='%23F2B632'/%3E%3Crect x='4' y='12' width='8' height='2' fill='%233A2A1C'/%3E%3C/svg%3E">
@@ -212,7 +212,7 @@ button{font:inherit;color:inherit}
       <p class="jobs-title">▶ 전직 가능한 직업 5종</p>
       <ul class="jobs" id="jobRow"></ul>
       <div class="start-row"><button class="btn" id="btnStart" type="button">전직 시작 ▶</button></div>
-      <p class="fine">질문 10개 · 약 2분 · 법조인이 꿈이 아니어도 괜찮아요</p>
+      <p class="fine">질문 9개 · 약 2분 · 법조인이 꿈이 아니어도 괜찮아요</p>
     </div>
   </section>
 
@@ -362,13 +362,6 @@ var QUESTIONS = [
         P:"누가 어떤 일을 했고 안 했는지 하나하나 따져 책임을 묻는다",
         J:"그 친구 사정도 듣고, 기여도에 맞는 점수 배분을 제안한다",
         W:"역할과 마감일을 정리한 분담표를 만들어 다 같이 일하는 구조를 만든다" } },
-  { title:"모의재판 배역 선택",
-    text:"청소년 로스쿨 모의재판에서 맡을 역할을 고를 수 있다. 가장 끌리는 역할은?",
-    o:{ H:"법이 모두의 권리를 지키는지 큰 그림에서 판단하는 헌법재판관",
-        L:"의뢰인을 위해 증거와 논리로 설득하는 변호사",
-        P:"진실을 추적해 잘못에 책임을 묻는 검사",
-        J:"양쪽 이야기를 듣고 공정하게 판결하는 판사",
-        W:"일하는 사람의 권리 문제를 직접 풀어주는 노무사" } },
   { title:"엔딩 크레딧",
     text:"몇 년 뒤, 내가 맡았던 사건의 당사자가 감사 인사를 건넨다. 가장 듣고 싶은 말은?",
     o:{ H:"\"당신 덕분에 모두의 권리가 한 걸음 더 지켜졌어요.\"",
@@ -573,7 +566,7 @@ function initIntro(){
     c.setAttribute("aria-hidden","true"); paintSprite(c, k);
     li.appendChild(c); li.appendChild(document.createTextNode(JOBS[k].name)); row.appendChild(li);
   });
-  typeInto($("introSay"), "어서 와, 모험가! 여기는 법의 마을이다. 열 개의 퀘스트를 해결하면 너에게 꼭 맞는 법조인 직업으로 전직시켜 주마!");
+  typeInto($("introSay"), "어서 와, 모험가! 여기는 법의 마을이다. 아홉 개의 퀘스트를 해결하면 너에게 꼭 맞는 법조인 직업으로 전직시켜 주마!");
 }
 
 /* ---- 문항 ---- */
